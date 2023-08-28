@@ -1,6 +1,6 @@
 {
-    "name": "/",
-    "description": "",
+    "name": "truehostcloud/cloudpap-php-client",
+    "description": "Access cloudpap console through API",
     "keywords": [
         "swagger",
         "php",
