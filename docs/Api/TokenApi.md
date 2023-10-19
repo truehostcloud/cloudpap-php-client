@@ -1,6 +1,6 @@
-# Swagger\Client\TokenApi
+# Cloudpap\Client\TokenApi
 
-All URIs are relative to *http://localhost:8000/api*
+All URIs are relative to *https://console.cloudpap.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **tokenVerifyCreate**
-> \Swagger\Client\Model\TokenVerify tokenVerifyCreate($data)
+> \Cloudpap\Client\Model\TokenVerify tokenVerifyCreate($data)
 
 
 
@@ -20,17 +20,17 @@ Takes a token and indicates if it is valid.  This view provides no information a
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\TokenApi(
+$apiInstance = new Cloudpap\Client\Api\TokenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$data = new \Swagger\Client\Model\TokenVerify(); // \Swagger\Client\Model\TokenVerify | 
+$data = new \Cloudpap\Client\Model\TokenVerify(); // \Cloudpap\Client\Model\TokenVerify | 
 
 try {
     $result = $apiInstance->tokenVerifyCreate($data);
@@ -45,11 +45,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**\Swagger\Client\Model\TokenVerify**](../Model/TokenVerify.md)|  |
+ **data** | [**\Cloudpap\Client\Model\TokenVerify**](../Model/TokenVerify.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\TokenVerify**](../Model/TokenVerify.md)
+[**\Cloudpap\Client\Model\TokenVerify**](../Model/TokenVerify.md)
 
 ### Authorization
 

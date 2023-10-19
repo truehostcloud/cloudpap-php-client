@@ -1,6 +1,6 @@
-# Swagger\Client\VirtualMachineBackupsApi
+# Cloudpap\Client\VirtualMachineBackupsApi
 
-All URIs are relative to *http://localhost:8000/api*
+All URIs are relative to *https://console.cloudpap.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,11 +23,11 @@ Virtual machine backup view set
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\VirtualMachineBackupsApi(
+$apiInstance = new Cloudpap\Client\Api\VirtualMachineBackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -65,7 +65,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **virtualMachineBackupsList**
-> \Swagger\Client\Model\VirtualMachineBackup[] virtualMachineBackupsList($virtual_machine)
+> \Cloudpap\Client\Model\VirtualMachineBackup[] virtualMachineBackupsList($virtual_machine)
 
 
 
@@ -77,11 +77,11 @@ Virtual machine backup view set
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\VirtualMachineBackupsApi(
+$apiInstance = new Cloudpap\Client\Api\VirtualMachineBackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VirtualMachineBackup[]**](../Model/VirtualMachineBackup.md)
+[**\Cloudpap\Client\Model\VirtualMachineBackup[]**](../Model/VirtualMachineBackup.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **virtualMachineBackupsRead**
-> \Swagger\Client\Model\VirtualMachineBackup virtualMachineBackupsRead($id)
+> \Cloudpap\Client\Model\VirtualMachineBackup virtualMachineBackupsRead($id)
 
 
 
@@ -132,11 +132,11 @@ Virtual machine backup view set
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\VirtualMachineBackupsApi(
+$apiInstance = new Cloudpap\Client\Api\VirtualMachineBackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VirtualMachineBackup**](../Model/VirtualMachineBackup.md)
+[**\Cloudpap\Client\Model\VirtualMachineBackup**](../Model/VirtualMachineBackup.md)
 
 ### Authorization
 
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **virtualMachineBackupsRestore**
-> \Swagger\Client\Model\VirtualMachineBackup virtualMachineBackupsRestore($id, $data)
+> \Cloudpap\Client\Model\VirtualMachineBackup virtualMachineBackupsRestore($id, $data)
 
 
 
@@ -187,18 +187,18 @@ Restore virtual machine backup
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\VirtualMachineBackupsApi(
+$apiInstance = new Cloudpap\Client\Api\VirtualMachineBackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this virtual machine backup.
-$data = new \Swagger\Client\Model\VirtualMachineBackup(); // \Swagger\Client\Model\VirtualMachineBackup | 
+$data = new \Cloudpap\Client\Model\VirtualMachineBackup(); // \Cloudpap\Client\Model\VirtualMachineBackup | 
 
 try {
     $result = $apiInstance->virtualMachineBackupsRestore($id, $data);
@@ -214,11 +214,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this virtual machine backup. |
- **data** | [**\Swagger\Client\Model\VirtualMachineBackup**](../Model/VirtualMachineBackup.md)|  |
+ **data** | [**\Cloudpap\Client\Model\VirtualMachineBackup**](../Model/VirtualMachineBackup.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\VirtualMachineBackup**](../Model/VirtualMachineBackup.md)
+[**\Cloudpap\Client\Model\VirtualMachineBackup**](../Model/VirtualMachineBackup.md)
 
 ### Authorization
 

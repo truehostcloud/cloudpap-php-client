@@ -22,10 +22,10 @@ Name | Type | Description | Notes
 **transaction_xe_date** | [**\DateTime**](\DateTime.md) | Date of the transaction exchange rate. | [optional] 
 **state** | **string** | The state the invoice is in. | [optional] 
 **proforma** | **string** |  | [optional] 
-**invoice_entries** | [**\Swagger\Client\Model\DocumentEntry[]**](DocumentEntry.md) |  | [optional] 
+**invoice_entries** | [**\Cloudpap\Client\Model\DocumentEntry[]**](DocumentEntry.md) |  | [optional] 
 **total** | **string** |  | [optional] 
 **total_in_transaction_currency** | **string** |  | [optional] 
-**transactions** | [**\Swagger\Client\Model\BillingTransaction[]**](BillingTransaction.md) |  | [optional] 
+**transactions** | [**\Cloudpap\Client\Model\BillingTransaction[]**](BillingTransaction.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

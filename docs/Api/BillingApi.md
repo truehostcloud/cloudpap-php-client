@@ -1,6 +1,6 @@
-# Swagger\Client\BillingApi
+# Cloudpap\Client\BillingApi
 
-All URIs are relative to *http://localhost:8000/api*
+All URIs are relative to *https://console.cloudpap.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 
 # **billingCardsCreate**
-> \Swagger\Client\Model\BillingCard billingCardsCreate($data)
+> \Cloudpap\Client\Model\BillingCard billingCardsCreate($data)
 
 
 
@@ -41,17 +41,17 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$data = new \Swagger\Client\Model\BillingCard(); // \Swagger\Client\Model\BillingCard | 
+$data = new \Cloudpap\Client\Model\BillingCard(); // \Cloudpap\Client\Model\BillingCard | 
 
 try {
     $result = $apiInstance->billingCardsCreate($data);
@@ -66,11 +66,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**\Swagger\Client\Model\BillingCard**](../Model/BillingCard.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingCard**](../Model/BillingCard.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCard**](../Model/BillingCard.md)
+[**\Cloudpap\Client\Model\BillingCard**](../Model/BillingCard.md)
 
 ### Authorization
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCardsDefault**
-> \Swagger\Client\Model\BillingCard billingCardsDefault($id, $data)
+> \Cloudpap\Client\Model\BillingCard billingCardsDefault($id, $data)
 
 
 
@@ -96,18 +96,18 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this billing card.
-$data = new \Swagger\Client\Model\BillingCard(); // \Swagger\Client\Model\BillingCard | 
+$data = new \Cloudpap\Client\Model\BillingCard(); // \Cloudpap\Client\Model\BillingCard | 
 
 try {
     $result = $apiInstance->billingCardsDefault($id, $data);
@@ -123,11 +123,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this billing card. |
- **data** | [**\Swagger\Client\Model\BillingCard**](../Model/BillingCard.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingCard**](../Model/BillingCard.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCard**](../Model/BillingCard.md)
+[**\Cloudpap\Client\Model\BillingCard**](../Model/BillingCard.md)
 
 ### Authorization
 
@@ -153,11 +153,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,7 +195,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCardsList**
-> \Swagger\Client\Model\BillingCard[] billingCardsList()
+> \Cloudpap\Client\Model\BillingCard[] billingCardsList()
 
 
 
@@ -207,11 +207,11 @@ void (empty response body)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -232,7 +232,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCard[]**](../Model/BillingCard.md)
+[**\Cloudpap\Client\Model\BillingCard[]**](../Model/BillingCard.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCardsRead**
-> \Swagger\Client\Model\BillingCard billingCardsRead($id)
+> \Cloudpap\Client\Model\BillingCard billingCardsRead($id)
 
 
 
@@ -258,11 +258,11 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCard**](../Model/BillingCard.md)
+[**\Cloudpap\Client\Model\BillingCard**](../Model/BillingCard.md)
 
 ### Authorization
 
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersAppliedCoupons**
-> \Swagger\Client\Model\BillingCustomer billingCustomersAppliedCoupons($id)
+> \Cloudpap\Client\Model\BillingCustomer billingCustomersAppliedCoupons($id)
 
 
 
@@ -313,11 +313,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -342,7 +342,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
+[**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
 
 ### Authorization
 
@@ -356,7 +356,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersApplyCoupon**
-> \Swagger\Client\Model\CouponClaim billingCustomersApplyCoupon($id, $data)
+> \Cloudpap\Client\Model\CouponClaim billingCustomersApplyCoupon($id, $data)
 
 
 
@@ -368,18 +368,18 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this tenant.
-$data = new \Swagger\Client\Model\CouponClaim(); // \Swagger\Client\Model\CouponClaim | 
+$data = new \Cloudpap\Client\Model\CouponClaim(); // \Cloudpap\Client\Model\CouponClaim | 
 
 try {
     $result = $apiInstance->billingCustomersApplyCoupon($id, $data);
@@ -395,11 +395,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this tenant. |
- **data** | [**\Swagger\Client\Model\CouponClaim**](../Model/CouponClaim.md)|  |
+ **data** | [**\Cloudpap\Client\Model\CouponClaim**](../Model/CouponClaim.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\CouponClaim**](../Model/CouponClaim.md)
+[**\Cloudpap\Client\Model\CouponClaim**](../Model/CouponClaim.md)
 
 ### Authorization
 
@@ -413,7 +413,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersBillingWallet**
-> \Swagger\Client\Model\BillingCustomer billingCustomersBillingWallet($id)
+> \Cloudpap\Client\Model\BillingCustomer billingCustomersBillingWallet($id)
 
 
 
@@ -425,11 +425,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -454,7 +454,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
+[**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
 
 ### Authorization
 
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersList**
-> \Swagger\Client\Model\BillingCustomer[] billingCustomersList()
+> \Cloudpap\Client\Model\BillingCustomer[] billingCustomersList()
 
 
 
@@ -480,11 +480,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -505,7 +505,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCustomer[]**](../Model/BillingCustomer.md)
+[**\Cloudpap\Client\Model\BillingCustomer[]**](../Model/BillingCustomer.md)
 
 ### Authorization
 
@@ -519,7 +519,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersPartialUpdate**
-> \Swagger\Client\Model\BillingCustomer billingCustomersPartialUpdate($id, $data)
+> \Cloudpap\Client\Model\BillingCustomer billingCustomersPartialUpdate($id, $data)
 
 
 
@@ -531,18 +531,18 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this tenant.
-$data = new \Swagger\Client\Model\BillingCustomer(); // \Swagger\Client\Model\BillingCustomer | 
+$data = new \Cloudpap\Client\Model\BillingCustomer(); // \Cloudpap\Client\Model\BillingCustomer | 
 
 try {
     $result = $apiInstance->billingCustomersPartialUpdate($id, $data);
@@ -558,11 +558,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this tenant. |
- **data** | [**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
+[**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
 
 ### Authorization
 
@@ -576,7 +576,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersRead**
-> \Swagger\Client\Model\BillingCustomer billingCustomersRead($id)
+> \Cloudpap\Client\Model\BillingCustomer billingCustomersRead($id)
 
 
 
@@ -588,11 +588,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -617,7 +617,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
+[**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
 
 ### Authorization
 
@@ -631,7 +631,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingCustomersUpdate**
-> \Swagger\Client\Model\BillingCustomer billingCustomersUpdate($id, $data)
+> \Cloudpap\Client\Model\BillingCustomer billingCustomersUpdate($id, $data)
 
 
 
@@ -643,18 +643,18 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this tenant.
-$data = new \Swagger\Client\Model\BillingCustomer(); // \Swagger\Client\Model\BillingCustomer | 
+$data = new \Cloudpap\Client\Model\BillingCustomer(); // \Cloudpap\Client\Model\BillingCustomer | 
 
 try {
     $result = $apiInstance->billingCustomersUpdate($id, $data);
@@ -670,11 +670,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this tenant. |
- **data** | [**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
+[**\Cloudpap\Client\Model\BillingCustomer**](../Model/BillingCustomer.md)
 
 ### Authorization
 
@@ -688,7 +688,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingInvoicesList**
-> \Swagger\Client\Model\BillingInvoice[] billingInvoicesList()
+> \Cloudpap\Client\Model\BillingInvoice[] billingInvoicesList()
 
 
 
@@ -700,11 +700,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -725,7 +725,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingInvoice[]**](../Model/BillingInvoice.md)
+[**\Cloudpap\Client\Model\BillingInvoice[]**](../Model/BillingInvoice.md)
 
 ### Authorization
 
@@ -739,7 +739,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingInvoicesRead**
-> \Swagger\Client\Model\BillingInvoice billingInvoicesRead($id)
+> \Cloudpap\Client\Model\BillingInvoice billingInvoicesRead($id)
 
 
 
@@ -751,11 +751,11 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -780,7 +780,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingInvoice**](../Model/BillingInvoice.md)
+[**\Cloudpap\Client\Model\BillingInvoice**](../Model/BillingInvoice.md)
 
 ### Authorization
 
@@ -794,7 +794,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingPaymentMethodsCreate**
-> \Swagger\Client\Model\BillingPaymentMethod billingPaymentMethodsCreate($data)
+> \Cloudpap\Client\Model\BillingPaymentMethod billingPaymentMethodsCreate($data)
 
 
 
@@ -806,17 +806,17 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$data = new \Swagger\Client\Model\BillingPaymentMethod(); // \Swagger\Client\Model\BillingPaymentMethod | 
+$data = new \Cloudpap\Client\Model\BillingPaymentMethod(); // \Cloudpap\Client\Model\BillingPaymentMethod | 
 
 try {
     $result = $apiInstance->billingPaymentMethodsCreate($data);
@@ -831,11 +831,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
+[**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
 
 ### Authorization
 
@@ -861,11 +861,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -903,7 +903,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingPaymentMethodsList**
-> \Swagger\Client\Model\BillingPaymentMethod[] billingPaymentMethodsList()
+> \Cloudpap\Client\Model\BillingPaymentMethod[] billingPaymentMethodsList()
 
 
 
@@ -915,11 +915,11 @@ void (empty response body)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -940,7 +940,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingPaymentMethod[]**](../Model/BillingPaymentMethod.md)
+[**\Cloudpap\Client\Model\BillingPaymentMethod[]**](../Model/BillingPaymentMethod.md)
 
 ### Authorization
 
@@ -954,7 +954,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingPaymentMethodsPartialUpdate**
-> \Swagger\Client\Model\BillingPaymentMethod billingPaymentMethodsPartialUpdate($id, $data)
+> \Cloudpap\Client\Model\BillingPaymentMethod billingPaymentMethodsPartialUpdate($id, $data)
 
 
 
@@ -966,18 +966,18 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this payment method.
-$data = new \Swagger\Client\Model\BillingPaymentMethod(); // \Swagger\Client\Model\BillingPaymentMethod | 
+$data = new \Cloudpap\Client\Model\BillingPaymentMethod(); // \Cloudpap\Client\Model\BillingPaymentMethod | 
 
 try {
     $result = $apiInstance->billingPaymentMethodsPartialUpdate($id, $data);
@@ -993,11 +993,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this payment method. |
- **data** | [**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
+[**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
 
 ### Authorization
 
@@ -1011,7 +1011,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingPaymentMethodsRead**
-> \Swagger\Client\Model\BillingPaymentMethod billingPaymentMethodsRead($id)
+> \Cloudpap\Client\Model\BillingPaymentMethod billingPaymentMethodsRead($id)
 
 
 
@@ -1023,11 +1023,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1052,7 +1052,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
+[**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
 
 ### Authorization
 
@@ -1066,7 +1066,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingPaymentMethodsUpdate**
-> \Swagger\Client\Model\BillingPaymentMethod billingPaymentMethodsUpdate($id, $data)
+> \Cloudpap\Client\Model\BillingPaymentMethod billingPaymentMethodsUpdate($id, $data)
 
 
 
@@ -1078,18 +1078,18 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | A unique integer value identifying this payment method.
-$data = new \Swagger\Client\Model\BillingPaymentMethod(); // \Swagger\Client\Model\BillingPaymentMethod | 
+$data = new \Cloudpap\Client\Model\BillingPaymentMethod(); // \Cloudpap\Client\Model\BillingPaymentMethod | 
 
 try {
     $result = $apiInstance->billingPaymentMethodsUpdate($id, $data);
@@ -1105,11 +1105,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| A unique integer value identifying this payment method. |
- **data** | [**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)|  |
+ **data** | [**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
+[**\Cloudpap\Client\Model\BillingPaymentMethod**](../Model/BillingPaymentMethod.md)
 
 ### Authorization
 
@@ -1123,7 +1123,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingTransactionsList**
-> \Swagger\Client\Model\BillingTransaction[] billingTransactionsList()
+> \Cloudpap\Client\Model\BillingTransaction[] billingTransactionsList()
 
 
 
@@ -1135,11 +1135,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1160,7 +1160,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingTransaction[]**](../Model/BillingTransaction.md)
+[**\Cloudpap\Client\Model\BillingTransaction[]**](../Model/BillingTransaction.md)
 
 ### Authorization
 
@@ -1174,7 +1174,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingTransactionsRead**
-> \Swagger\Client\Model\BillingTransaction billingTransactionsRead($id)
+> \Cloudpap\Client\Model\BillingTransaction billingTransactionsRead($id)
 
 
 
@@ -1186,11 +1186,11 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Cloudpap\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new Cloudpap\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1215,7 +1215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BillingTransaction**](../Model/BillingTransaction.md)
+[**\Cloudpap\Client\Model\BillingTransaction**](../Model/BillingTransaction.md)
 
 ### Authorization
 
