@@ -58,7 +58,8 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'image' => 'int',
-        'root_user' => 'string'
+        'root_user' => 'string',
+        'root_password' => 'string'
     ];
 
     /**
@@ -68,7 +69,8 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'image' => null,
-        'root_user' => null
+        'root_user' => null,
+        'root_password' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'image' => 'image',
-        'root_user' => 'root_user'
+        'root_user' => 'root_user',
+        'root_password' => 'root_password'
     ];
 
     /**
@@ -109,7 +112,8 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'image' => 'setImage',
-        'root_user' => 'setRootUser'
+        'root_user' => 'setRootUser',
+        'root_password' => 'setRootPassword'
     ];
 
     /**
@@ -119,7 +123,8 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'image' => 'getImage',
-        'root_user' => 'getRootUser'
+        'root_user' => 'getRootUser',
+        'root_password' => 'getRootPassword'
     ];
 
     /**
@@ -184,6 +189,7 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
     {
         $this->container['image'] = isset($data['image']) ? $data['image'] : null;
         $this->container['root_user'] = isset($data['root_user']) ? $data['root_user'] : null;
+        $this->container['root_password'] = isset($data['root_password']) ? $data['root_password'] : null;
     }
 
     /**
@@ -200,6 +206,14 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
         }
         if (!is_null($this->container['root_user']) && (mb_strlen($this->container['root_user']) > 255)) {
             $invalidProperties[] = "invalid value for 'root_user', the character length must be smaller than or equal to 255.";
+        }
+
+        if (!is_null($this->container['root_password']) && (mb_strlen($this->container['root_password']) > 255)) {
+            $invalidProperties[] = "invalid value for 'root_password', the character length must be smaller than or equal to 255.";
+        }
+
+        if (!is_null($this->container['root_password']) && (mb_strlen($this->container['root_password']) < 1)) {
+            $invalidProperties[] = "invalid value for 'root_password', the character length must be bigger than or equal to 1.";
         }
 
         return $invalidProperties;
@@ -265,6 +279,37 @@ class VirtualMachineChangeImage implements ModelInterface, ArrayAccess
         }
 
         $this->container['root_user'] = $root_user;
+
+        return $this;
+    }
+
+    /**
+     * Gets root_password
+     *
+     * @return string
+     */
+    public function getRootPassword()
+    {
+        return $this->container['root_password'];
+    }
+
+    /**
+     * Sets root_password
+     *
+     * @param string $root_password root_password
+     *
+     * @return $this
+     */
+    public function setRootPassword($root_password)
+    {
+        if (!is_null($root_password) && (mb_strlen($root_password) > 255)) {
+            throw new \InvalidArgumentException('invalid length for $root_password when calling VirtualMachineChangeImage., must be smaller than or equal to 255.');
+        }
+        if (!is_null($root_password) && (mb_strlen($root_password) < 1)) {
+            throw new \InvalidArgumentException('invalid length for $root_password when calling VirtualMachineChangeImage., must be bigger than or equal to 1.');
+        }
+
+        $this->container['root_password'] = $root_password;
 
         return $this;
     }
